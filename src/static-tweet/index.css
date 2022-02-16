@@ -25,3 +25,20 @@
     color: rgb(3, 65, 119);
     font-size: 13px;
 }
+.time {
+    padding-left: 0.3em;
+    color: blueviolet;
+}
+.time::before {
+    content: '\00b7';
+    padding-right: 0.3em;
+}
+.buttons {
+    margin-top: 10px;
+    margin-left: 2px;
+    font-size: 1.4em;
+    color: rgb(131, 35, 160);
+} 
+.buttons i {
+    width: 80px;
+}
