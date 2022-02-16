@@ -5,8 +5,43 @@ import './Components/appStyle.css'
 import style from './Components/appStyle.module.css'
 import Tweet from './static-tweet/Tweet'
 
-const testTweet = {
+const testTweet1 = {
     message : "Something about cats.",
+    gravator : "xyz",
+    author : {
+        handle : "catperson",
+        name : "Cat Person ABC"
+    },
+    likes : 2,
+    retweet : 0,
+    timestamp : "3 hr ago"
+}
+const testTweet2 = {
+    message : "Est incididunt laboris veniam ad sint duis nisi.",
+    gravator : "xyz",
+    author : {
+        handle : "catperson",
+        name : "Cat Person ABC"
+    },
+    likes : 2,
+    retweet : 0,
+    timestamp : "3 hr ago"
+}
+
+const testTweet3 = {
+    message : "Magna ut proident commodo consequat officia velit dolore nostrud velit sunt deserunt.",
+    gravator : "xyz",
+    author : {
+        handle : "catperson",
+        name : "Cat Person ABC"
+    },
+    likes : 2,
+    retweet : 0,
+    timestamp : "3 hr ago"
+}
+
+const testTweet4 = {
+    message : "Qui irure Lorem sunt minim est laborum labore.",
     gravator : "xyz",
     author : {
         handle : "catperson",
@@ -20,7 +55,10 @@ const testTweet = {
 const App = () => {
     return (
         <div>
-          <Tweet tweetData = {testTweet}/>
+          <Tweet tweetData = {testTweet1}/>
+          <Tweet tweetData = {testTweet2}/>
+          <Tweet tweetData = {testTweet3}/>
+          <Tweet tweetData = {testTweet4}/>
 
         </div>
     )
