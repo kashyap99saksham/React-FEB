@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Time = () => {
+const Time = ({time}) => {
   return (
-    <span className='time'>3h ago</span>
+    <span className='time'>{time}</span>
   )
 }
 

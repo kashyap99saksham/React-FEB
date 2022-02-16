@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Author = () => {
+const Author = ({autor}) => {
+    console.log(autor);
+    let { name, handle } = autor
   return (
       <span className='author'>
-        <span className='name'>Your name</span>
-        <span className='handle'>@yourHandle</span>
+        <span className='name'>{name}</span>
+        <span className='handle'>{handle}</span>
       </span>
   )
 }

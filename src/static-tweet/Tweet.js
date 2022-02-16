@@ -6,13 +6,17 @@ import Message from './Message'
 import Options from './Options'
 import Time from './Time'
 
-const Tweet = () => {
+
+
+const Tweet = ({tweetData}) => {
+  console.log(tweetData);
   return (
     <div className='tweet'>
-        <Avatar />
+        <Avatar hash = {tweetData.gravator}/>
         <div className='content'>
-          <Author /> <Time />
-          <Message />
+          <Author autor = {tweetData.author}/> 
+          <Time time = {tweetData.timestamp}/>
+          <Message text = {tweetData.message}/>
           <div className='buttons'>
             <Options />  
           </div>

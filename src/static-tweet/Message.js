@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Message = () => {
+const Message = ({text}) => {
   return (
     <div className='message'>
-        This is my Message, Hello everyone! 
+       {text}
     </div>
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Avatar = () => {
+const Avatar = ({hash}) => {
+
+   let url = `https://gravatar.com/avatar/${hash}` 
   return (
-    <img src='https://gravatar.com/avatar/nothing'
+    <img src = {url}
     className='avatar'
     alt='avatar' />
   )
