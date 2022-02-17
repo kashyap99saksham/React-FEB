@@ -1,24 +1,25 @@
+// state -- class component
+
+
+// state is a plain javascript Object used by react to respresent about component's current situation. 
+
+
+// state = {
+
+// }
+
 import React from 'react'
-import Cake from './Components/Cake'
-import Garage from './Conditional/Garage'
-import Goal from './Conditional/Goal'
-import Login from './Conditional/Login'
-
-
-const cars = [ 'Ford' , 'BMW' , 'Audi' ]
+import Message from './States/Message'
 
 const App = () => {
   return (
     <div>
-       {/* <Login loggedIn = {true} /> */}
-       {/* <Garage cars={cars} /> */}
-       <Goal isGoal={true} />
+        <Message name="saksham"/>  //this
+        <Message name="saksham"/>
+        <Message name="saksham"/>
+
     </div>
   )
 }
 
 export default App
-
-
-// conditional rendering
-// if else 
