@@ -1,23 +1,15 @@
-// state -- class component
-
-
-// state is a plain javascript Object used by react to respresent about component's current situation. 
-
-
-// state = {
-
-// }
+// event handling
+// 1. Functional Component
+// 2. Class Component
 
 import React from 'react'
-import Message from './States/Message'
+import ClassClick from './Events/ClassClick'
+import FunctionClick from './Events/FunctionClick'
 
 const App = () => {
   return (
     <div>
-        <Message name="saksham"/>  //this
-        <Message name="saksham"/>
-        <Message name="saksham"/>
-
+        <ClassClick />
     </div>
   )
 }
