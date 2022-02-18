@@ -4,12 +4,19 @@
 
 import React from 'react'
 import ClassClick from './Events/ClassClick'
+import JK from './Events/EventBinding'
 import FunctionClick from './Events/FunctionClick'
 
 const App = () => {
+
+    
+    
   return (
     <div>
-        <ClassClick />
+        {/* <ClassClick /> */}
+        {/* <FunctionClick /> */}
+        <JK />
+       
     </div>
   )
 }

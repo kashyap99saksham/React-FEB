@@ -8,6 +8,7 @@ class ClassClick extends Component {
     }
 
     render() {
+        console.log("Render from child");
         return (
             <div>
                 <button onClick={ this.clickHandler }>Click from Class</button>
