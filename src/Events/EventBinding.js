@@ -11,7 +11,7 @@ class JK extends Component {
 
     //     // this.state.message = 'GoodBye'
 
-    //     console.log(this);
+    //     console.log(this); // undefined
         
     //     this.setState( { 
     //             message : 'GoodBye User, Thanks for Visit, come again!' 
@@ -20,6 +20,7 @@ class JK extends Component {
     // }
 
     clickHandler = () => {
+      
         this.setState( { 
                     message : 'GoodBye User, Thanks for Visit, come again!' 
                 } )
@@ -30,19 +31,14 @@ class JK extends Component {
     return (
       <div>
           <h1> { this.state.message } </h1>
+          <button onClick={ this.clickHandler }>Change Msg</button>
+
+
           {/* <button onClick={ this.clickHandler.bind(this) }> Click </button> */}
 
 
 
-          <button onClick={  this.clickHandler    }> Click </button>
 
-          <button onClick={  () =>  this.clickHandler()  }> Click </button>
-
-
-
-          <button onClick={ this.clickHandler }> Click </button>
-
-          <ClassClick />
           
 
 
@@ -77,4 +73,5 @@ export default JK
 // const abc =  ( ) => {
 
 // }
+
 
