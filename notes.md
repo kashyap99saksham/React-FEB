@@ -12,10 +12,10 @@ When a component is being removed from the DOM
 
 
 ## Mounting :
-1. constructor 
+1. constructor                      [ only in mounting ]
 2. static getDerivedStateFromProps
-3. render
-4. componentDidMount
+3. render   
+4. componentDidMount                [ only in mounting ]
 
 ## Updating :
 1. static getDerivedStateFromProps
@@ -55,7 +55,34 @@ When a component is being removed from the DOM
 
 
 
+# Updating Phase
+### static getDerivedStateFromProps
+- Method is called every time a component is re-rendered.
+- set the state
+- Not perform, Http req.
+
+### shouldComponentUpdate
+- Dictates if the component should re-render or not.
+- Perfomance Optimization
+- Not perform, Http req.
+
+### Render
+- Only Required Method
+- Return JSX
+- Not perform, Http req.
+
+### getSnapshotBeforeUpdate()    [Rarely Used]
+- Called right before the changes from the virtual DOM are to be reflected in the DOM.
+- Capture some Information From DOM
+
+### componentDidUpdate()
+- called after the render is finished in the re-render Cycles.
+<!-- - Cause side effects -->
+
+ 
 
 
-
-
+### Unmounting Phase ( LAST WISH )
+- Method is invoked immediately before a component is unmounted and destroyed.
+- Cancelling any network req. , also invalidating timers.
+- DO NOT CALL THE SetSTATE METHOD
