@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 
-class DyingCompo extends Component {
+class classCompo extends Component {
 
-    componentWillUnmount()  {
-        console.log("I m going to Die :-( ")
+    render() {
+        return (
+            <div>This is created using class component</div>
+        )
     }
-
-  render() {
-    return (
-      <div>DyingCompo</div>
-    )
-  }
 }
 
-export default DyingCompo
+export default classCompo

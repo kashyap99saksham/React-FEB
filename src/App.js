@@ -1,25 +1,20 @@
 import React from 'react'
-import DyingCompo from './DyingCompo'
-import ComponentDM from './Lifecycle/ComponentDM'
-import Construct from './Lifecycle/Construct'
-import GetDerived from './Lifecycle/GetDerived'
-import GetSnapBefore from './Lifecycle/GetSnapBefore'
-import LifecycleA from './Lifecycle/LifecycleA'
-import LifecycleC from './Lifecycle/LifecycleC'
+import About from './Routing/About'
+import Contact from './Routing/Contact'
+import Footer from './Routing/Footer'
+import Header from './Routing/Header'
+import Home from './Routing/Home'
 
-class App extends React.Component  {
-  state = {
-    show: false
-  }
-  render()  {
+const App = () => {
     return (
-      <div>
-          { this.state.show ? <DyingCompo /> : '' }
-          <button onClick={()=>this.setState({show: !this.state.show})}>Show</button>
-      </div>
+        <div>
+           <Header />
+           <Home />
+           <About />
+           <Contact />
+           <Footer />
+        </div>
     )
-  }
-  
 }
 
 export default App
