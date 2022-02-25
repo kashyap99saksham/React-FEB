@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-ro
 
 import About from './Routing/About'
 import Contact from './Routing/Contact'
+import DetailPage from './Routing/DetailPage'
 import Footer from './Routing/Footer'
 import Header from './Routing/Header'
 import Home from './Routing/Home'
@@ -28,6 +29,8 @@ const App = () => {
                 </Route>
                 <Route path='laptop' element={ <LaptopList /> } />
             </Route>
+
+            <Route path='/detailpage' element={<DetailPage /> }/>
 
 
         </Routes>
