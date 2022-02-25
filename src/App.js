@@ -11,6 +11,7 @@ import LaptopList from './Routing/LaptopList'
 import MobileList from './Routing/MobileList'
 import PageNotFound from './Routing/PageNotFound'
 import Product from './Routing/Product'
+import ProductDesc from './Routing/ProductDesc'
 
 const App = () => {
     return (
@@ -22,13 +23,13 @@ const App = () => {
             <Route path='/' element={ <Home />  } />
             
             <Route path='/products' element={ <Product />} > 
-                <Route path='mobile' element={ <MobileList /> } />
+                <Route path='mobile' element={ <MobileList /> }>
+                    <Route path=':myMobileParam' element={<ProductDesc /> }/>
+                </Route>
                 <Route path='laptop' element={ <LaptopList /> } />
             </Route>
 
 
-
-            
         </Routes>
 
         <Footer />
