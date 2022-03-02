@@ -1,56 +1,16 @@
 import React from 'react'
-
-import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom'
-
-import About from './Routing/About'
-import Contact from './Routing/Contact'
-import DetailPage from './Routing/DetailPage'
-import Footer from './Routing/Footer'
-import Header from './Routing/Header'
-import Home from './Routing/Home'
-import LaptopList from './Routing/LaptopList'
-import MobileList from './Routing/MobileList'
-import PageNotFound from './Routing/PageNotFound'
-import Product from './Routing/Product'
-import ProductDesc from './Routing/ProductDesc'
+import ClassCounter from './Hooks/ClassCounter'
+import HookCounter from './Hooks/HookCounter'
 
 const App = () => {
-    return (
-
-    <Router>
-        <Header />
-
-        <Routes>
-            <Route path='/' element={ <Home />  } />
-            
-            <Route path='/products' element={ <Product />} > 
-                <Route path='mobile' element={ <MobileList /> }>
-                    <Route path=':myMobileParam' element={<ProductDesc /> }/>
-                </Route>
-                <Route path='laptop' element={ <LaptopList /> } />
-            </Route>
-
-            <Route path='/detailpage' element={<DetailPage /> }/>
-
-
-        </Routes>
-
-        <Footer />
-    </Router>
-
-    )
+  return (
+    <div><HookCounter /></div>
+  )
 }
 
 export default App
 
+// this 
 
-
-
-
-// <div>
-// <Header />       
-// <Home />
-// <About />
-// <Contact />
-// <Footer />
-// </div>
+// Hooks : They allow you to use React Features without having to write a class.
+// Avoids the whole confsion with 'this' keyword.
