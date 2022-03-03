@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
-const HookCounter = () => {
+const HookCounter = (props) => {
 
-    const [ items, setItems ] = useState( "" )
+    const [ items, setItems ] = useState("") 
 
     useEffect( () => {
         console.log("hiiii");
@@ -75,3 +75,9 @@ export default HookCounter
 // componentDidUpdate() {
 
 // }
+
+
+// <div>
+//     hiiii
+//     <ChildComp />
+// </div>

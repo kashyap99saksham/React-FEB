@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 class ClassCounter extends Component {
     constructor(props) {
         super(props)
@@ -17,7 +16,9 @@ class ClassCounter extends Component {
     render() {
         return (
             <div>
+                class component
                 <button onClick={this.increamentCount}> Count : {this.state.count} </button> 
+                {this.props.children}
             </div>
         )
     }
