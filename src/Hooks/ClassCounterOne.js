@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { useState } from 'react/cjs/react.production.min';
 
 class ClassCounterOne extends Component {
     constructor(props) {
@@ -28,3 +29,20 @@ class ClassCounterOne extends Component {
 }
 
 export default ClassCounterOne
+
+
+
+{/* <h1>Hello<h1> */}
+
+
+
+{/* A {
+    <B>
+        <h1>Hello</h1>
+    </B>  
+}
+
+
+B {
+   props.children 
+} */}

@@ -1,4 +1,6 @@
 import React from 'react'
+import AddStudent from './ContextApi/AddStudent'
+import { StudentProvider } from './ContextApi/StudentContext'
 import StudentList from './ContextApi/StudentList'
 import StudentStatus from './ContextApi/StudentStatus'
 import ClassCounter from './Hooks/ClassCounter'
@@ -8,10 +10,15 @@ import HookCounterOne from './Hooks/HookCounterOne'
 
 const App = () => {
   return (
-    <div>
-        <StudentStatus />
-        <StudentList />
-    </div>
+
+    <StudentProvider>
+      <div>
+          <StudentStatus />
+          <AddStudent /><br/><br/><br/>
+          <StudentList />
+      </div>
+    </StudentProvider>
+
   )
 }
 

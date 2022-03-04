@@ -50,3 +50,18 @@ const HookCounterOne = () => {
 }
 
 export default HookCounterOne
+
+
+// useEffect( ()=>{}, [] )
+// count1
+// count2
+// count3
+// useEffect( ()=>{}, [count2,count1] )
+
+// hello i m going 
+
+// useEffect( ()=>{
+//   return ()=>console.log(hello i m going)
+// } )
+
+

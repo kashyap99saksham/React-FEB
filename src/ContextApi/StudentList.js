@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
+import { useContext } from 'react'
 import Student from './Student'
+import { StudentContext } from './StudentContext'
 
 const StudentList = () => {
 
-    const [students, setStudents] = useState([
-        {Name:"saksham",studentClass:"X",info:"Nulla ea velit dolore excepteur consectetur incididunt tempor eiusmod commodo."},
-        {Name:"Kashyap",studentClass:"XI",info:"Occaecat laboris ea sunt do velit."},
-        {Name:"Abc",studentClass:"XII",info:"Labore culpa pariatur esse sint non do in dolore commodo."},
-    ])
+    const [students, setStudents] = useContext(StudentContext)
 
     return (
         <div className='d-flex justify-content-around'>
