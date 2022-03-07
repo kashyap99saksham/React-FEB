@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useContext } from 'react'
 import { StudentContext } from './StudentContext'
 
-
 const AddStudent = () => {
     const [Name, setName] = useState('')
     const [Class, setClass] = useState('')
@@ -10,12 +9,13 @@ const AddStudent = () => {
     const [students, setStudents] = useContext(StudentContext);
 
     const handleAddStudent = () => {
-        // let studentObj = { 
-        //     Name:Name,
-        //     studentClass:Class,
-        //     info:Info
-        // }
-        setStudents( [ ...students, { Name:Name,studentClass:Class,info:Info } ] )
+        let studentObj = {
+            id: students.length, 
+            Name:Name,
+            studentClass:Class,
+            info:Info
+        }
+        setStudents( [ ...students, studentObj ] )
 
     }
     return (
@@ -56,3 +56,10 @@ const AddStudent = () => {
 }
 
 export default AddStudent
+
+
+
+
+// state = "saksham"
+
+// state = "saksham"
