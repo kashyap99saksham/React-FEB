@@ -9,7 +9,7 @@ class ClickCounter extends Component {
         return (
             <button onClick={incrementCount}> Class {count} Times </button>
         )
-    }
+    } 
 }
 
 export default UpdatedComponent(ClickCounter)
