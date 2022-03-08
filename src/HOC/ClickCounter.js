@@ -34,3 +34,15 @@ export default UpdatedComponent(ClickCounter)
 
 // print( sum(5) )
 // export default UpdatedComponent(Original)
+
+
+
+// input , textarea 
+
+
+
+
+
+
+
+

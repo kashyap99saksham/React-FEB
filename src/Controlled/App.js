@@ -1,9 +1,9 @@
 import React from 'react'
-import GithubApi from './fetch/GithubApi'
+import Form from './Form'
 
 const App = () => {
   return (
-    <div><GithubApi /></div>
+    <div><Form /></div>
   )
 }
 
