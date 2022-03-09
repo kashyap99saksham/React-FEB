@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App  from './App'
-
+import store from './REDUX/store'
+import {Provider} from 'react-redux'
+ 
 
 ReactDOM.render(
-    <App />,
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root')
 );
 
@@ -13,7 +17,7 @@ ReactDOM.render(
 // name export - {} | exact name of compo.
 // export default - {} cannot use   | free to use any
 
-
+// React-redux is the official redux UI binding library for react
 
 
 
