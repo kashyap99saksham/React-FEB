@@ -1,45 +1,22 @@
-import React from 'react'
-import AddStudent from './REDUX PART 2/AddStudent'
-import store from './REDUX PART 2/store'
-import {Provider} from 'react-redux'
+import React from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { decreaseCounter, incrementCounter } from "./actions/counterAction"
 
-const App = () => {
-  return (
-      <Provider store={store}>
+function App() {   
+
+    const myState = useSelector( (state) => state.handleMyCounter )
+
+    const dispatch = useDispatch()
+
+    return (
         <div>
-            <AddStudent />
+            <button onClick={ ()=>dispatch(decreaseCounter())  }> MINUS </button>
+            <input value={myState}/>
+            <button onClick={ ()=>dispatch(incrementCounter())  }> PLUS </button>
         </div>
-    </Provider>
-  )
+    )
 }
-
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
